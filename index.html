@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PARA ESME</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Pantalla de candado -->
+  <div id="lock-screen" class="lock-screen">
+    <div class="lock-box">
+      <div class="lock-icon">🔒</div>
+      <h2>Introduce la contraseña</h2>
+      <div class="pin-inputs">
+        <input type="password" maxlength="1" inputmode="numeric">
+        <input type="password" maxlength="1" inputmode="numeric">
+        <input type="password" maxlength="1" inputmode="numeric">
+        <input type="password" maxlength="1" inputmode="numeric">
+      </div>
+      <button id="unlockBtn" class="btn primary">Desbloquear</button>
+      <p id="errorMsg" class="error"></p>
+    </div>
+  </div>
+
+  <div class="background"></div>
+
+  <!-- Tulipanes de fondo -->
+  <div class="tulip-field"></div>
+
+  <main class="wrapper" style="display:none;">
+    <section class="card" id="card">
+      <div class="sparkles" aria-hidden="true"></div>
+
+      <h1 class="title">¡ÁNIMO NIÑITA! ❤️‍🩹</h1>
+      <p class="subtitle">
+        Es un pequeño detalle, espero lo guardes y veas cuando lo necesites...
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="message">
+        Eres alguien que merece cosas bonitas. <br />
+        Tenemos poco tiempo de conocernos y realmente puedo decir que eres una persona especial, y es demasiado raro que lo diga. <br /> 
+        Muy pocas personas me causan una buena vibra y tu lo haces sencillo. <br />
+        Me gusta tu forma de ser y esa energía que puedo percibir. <br />
+        Por lo que espero que podamos seguir manteniendo contacto por mucho tiempo y que nuestra "amistad" siga creciendo.  <br />
+        Soy demasiado especial sobre a quien dejo entrar a mi vida, pero aqui estamos, por lo que un lugar especial lo tienes. <br />
+        Si necesitas a alguien que te escuche y apoye, aqui estoy y estaré, cualquier cosa me importa, quizas no lo demuestro de esa forma pero seguiré manteniendo la palabra pase lo que pase. <br />
+        Lo que sea, solo pídelo. <br />
+        Sigue siendo como eres, con tu alegría, tu resiliencia y tu autenticidad. <br />
+        Te mereces lo mejor. <br />
+        No estás sola, tienes gente que se preocupa por ti!
+      </p>
+
+      <div class="signature">
+        — Con cariño, <span contenteditable="true">El Carri</span>
+      </div>
+
+      <div class="actions">
+        <button id="btnSurprise" class="btn primary">¡Sorpresa!</button>
+        <button id="btnMusic" class="btn primary">🎵 </button>
+        <button id="btnTheme" class="btn ghost" aria-pressed="false">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </section>
+        <!-- Segunda página: foto -->
+    <section class="card photo-page" id="photoPage" style="display:none;">
+      <img src="Compis.jpeg" alt="Para ti" class="page-photo">
+      <p class="photo-caption" contenteditable="true">La fotillo pal recuerdo 💗</p>
+      <div class="actions">
+        <button id="btnBack" class="btn primary">← Volver</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="fx-layer" class="fx-layer" aria-hidden="true"></div>
+
+  <!-- Reproductor oculto -->
+  <audio id="audioPlayer" preload="auto">
+    <source src="LATIN MAFIA - Continuo Atardecer.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
